@@ -1,0 +1,95 @@
+@font-face {
+    font-family: typographicafont;
+    src: url(./TypoGraphica.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    font-family: typographicafont;
+    margin: 30px;
+    height: 90vh;
+}
+
+.flex-container {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition-duration: .5s;
+}
+
+span:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+@keyframes borderanmt {
+    0% {
+        border-top: 5px solid #15e6ca;
+        border-radius: 10px;
+    }
+
+    50% {
+        border-left: 5px solid #15e6ca;
+        border-radius: 10px;
+    }
+
+    100% {
+        border-bottom: 5px solid #15e6ca;
+        border-radius: 10px;
+    }
+}
+
+span:hover {
+    animation-name: borderanmt;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@keyframes coloranmt {
+    0% {
+        color: #ffffff;
+    }
+
+    50% {
+        color: #16e6ca;
+    }
+
+    100% {
+        color: #a8fff3;
+    }
+}
+
+a:hover {
+    animation-name: coloranmt;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.footer-container {
+    height: 85vh;
+    display: flex;
+    align-items: end;
+    color: #ffffff;
+    font-size: 14px;
+}
